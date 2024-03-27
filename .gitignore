@@ -1,8 +1,9 @@
 *.cfg
 *.csv
 *.docx
+*.ini
 *.pptx
-*.py
 *.txt
+*.url
 *.xlsm
 *.xlsx
