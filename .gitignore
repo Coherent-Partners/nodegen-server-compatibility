@@ -1,4 +1,7 @@
+*.cfg
 *.csv
+*.docx
+*.pptx
 *.py
 *.txt
 *.xlsm
