@@ -10,12 +10,15 @@
 ### Above combination will ignore all files without extension ###
 
 # Ignore folders and extensions
+**/__pycache__/
 *.cfg
 *.csv
 *.docx
 *.ini
 *.pptx
+*.pyc
 *.txt
 *.url
 *.xlsm
 *.xlsx
+*.zip
