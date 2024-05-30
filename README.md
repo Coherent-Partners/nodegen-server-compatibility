@@ -7,7 +7,7 @@ The Spark team developed [`nodegen-server`](https://github.com/orgs/Coherent-Par
 
 This page details the compatibility between a version of the [`nodegen-server`](https://github.com/orgs/Coherent-Partners/packages/container/package/nodegen-server) against the Spark [Neuron compiler](https://docs.coherent.global/build-spark-services/neuron/release-history). The compiler version can be found from the Spark UI under the _[Service Documentation Version details](https://docs.coherent.global/navigation/service-documentation#version-details)_ or in the [_Execute API_ `response_meta`.](https://docs.coherent.global/spark-apis/execute-api/execute-api-v3#response_meta)
 
-`nodegen-server` `1.31.0` is the first version that includes the capability and configuration for processing compatibility versions and the version compatibility mapping. However, Neuron compiled assets still do not have the Neuron version embedded and therefore the compatibility feature is still not fully functional.
+[`nodegen-server`](https://github.com/orgs/Coherent-Partners/packages/container/package/nodegen-server) `1.31.0` is the first version that includes the capability and configuration for processing compatibility versions and the version compatibility mapping. However, Neuron compiled assets still do not have the Neuron version embedded and therefore the compatibility feature is still not fully functional.
 
 The releases include the download for a JSON file mapping the compatibility versions.
 
