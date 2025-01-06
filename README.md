@@ -7,7 +7,7 @@ The Spark team developed [`nodegen-server`](https://github.com/orgs/Coherent-Par
 
 This page details the compatibility between a version of the [`nodegen-server`](https://github.com/orgs/Coherent-Partners/packages/container/package/nodegen-server) against the Spark [Neuron compiler](https://docs.coherent.global/build-spark-services/neuron/release-history). The compiler version can be found from the Spark UI under the _[Service Documentation Version details](https://docs.coherent.global/navigation/service-documentation#version-details)_ or in the [_Execute API_ `response_meta`.](https://docs.coherent.global/spark-apis/execute-api/execute-api-v3#response_meta)
 
-[`nodegen-server`](https://github.com/orgs/Coherent-Partners/packages/container/package/nodegen-server) `1.31.0` is the first version that includes the capability and configuration for processing compatibility versions and the version compatibility mapping. Compiled  [Wasm](https://webassembly.org/) modules from `Neuron` `1.22.1` onwards embed the compiler version that is also needed for the compatibility check.
+[`nodegen-server`](https://github.com/orgs/Coherent-Partners/packages/container/package/nodegen-server) `1.31.0` is the first version that includes the capability and configuration for processing compatibility versions and the version compatibility mapping. Compiled  [Wasm](https://webassembly.org/) modules from `Neuron` `1.22.1` onwards embed the Neuron version that is also needed for the compatibility check.
 
 The releases include the download for a JSON file mapping the compatibility versions.
 
@@ -18,16 +18,17 @@ The releases include the download for a JSON file mapping the compatibility vers
 List of all released runner versions and their corresponding __highest__ supported Neuron version.
 |date|runner_version|safe_compiler|
 | :---: | :---: | :---: |
+|2024-12-20|1.43.1|1.22.6|
 |2024-12-16|1.43.0|1.22.5|
 |2024-11-26|1.41.1|1.22.4|
 |2024-10-30|1.39.0|1.22.3|
 |2024-08-22|1.34.2|1.22.1|
+|2024-06-04|1.31.0|1.19.2|
 |2024-03-19|1.28.4|1.16.0|
 |2024-03-12|1.28.3|1.16.0|
 |2024-02-15|1.27.5|1.15.2|
 |2023-08-01|1.22.6|1.10.1|
 |2023-07-11|1.22.3|1.9.0|
 |2023-07-03|1.22.1|1.9.0|
-|2023-06-26|1.21.1|1.9.0|
 |2023-06-16|1.19.0|1.8.2|
 |2023-03-29|1.16.9|1.4.0|

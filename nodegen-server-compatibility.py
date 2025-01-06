@@ -18,11 +18,12 @@ config.read("nodegen-server-compatibility.ini")
 
 # read the runner compiler history
 runner_versions_pd = pd.read_csv(os.path.join(os.environ.get(config["paths"]["root"]),config["paths"]["runner_versions"]))
-# filter for only the published versions of the runner
-runner_versions_pd = runner_versions_pd.loc[runner_versions_pd["published"]==True]
-runner_versions_pd.drop(columns=["published"], inplace=True)
 # for each version of the runner note the latest Neuron that was released
 runner_versions_pd = runner_versions_pd.sort_values(by="date", ascending=False).drop_duplicates("runner_version", keep="first").reset_index(drop=True)
+# filter for only the published versions of the runner
+runner_versions_published_pd = pd.read_csv(os.path.join(os.environ.get(config["paths"]["root"]),config["paths"]["runner_versions_published"]))
+runner_versions_pd = runner_versions_pd.merge(runner_versions_published_pd, how="inner", on="runner_version")
+
 # read the runner feature version requirements
 # features_pd = pd.read_csv("nodegen-server Features (Testing).csv").sort_values(by="feature")
 features_pd = pd.read_csv(os.path.join(os.environ.get(config["paths"]["root"]),config["paths"]["features"])).sort_values(by="feature")
