@@ -1,0 +1,11 @@
+[project]
+name = "nodegen-server-compatibility"
+version = "0.1.0"
+description = "nodegen-server and Neuron compiler version compatibility."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "mdutils>=1.8.0",
+    "pandas>=2.3.1",
+]

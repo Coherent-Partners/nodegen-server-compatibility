@@ -16,6 +16,7 @@
 *.docx
 *.ini
 *.env
+*.lock
 *.pptx
 *.pyc
 *.txt
