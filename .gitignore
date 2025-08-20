@@ -15,6 +15,7 @@
 *.csv
 *.docx
 *.ini
+*.env
 *.pptx
 *.pyc
 *.txt
