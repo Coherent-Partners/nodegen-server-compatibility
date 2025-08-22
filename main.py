@@ -17,9 +17,9 @@ def main():
     # Get configuration from environment variables
     load_dotenv()
     ROOT = os.environ.get("ROOT")
-    FEATURES = os.environ.get("FEATURES")
     RUNNER_VERSIONS = os.environ.get("RUNNER_VERSIONS")
     RUNNER_VERSIONS_PUBLISHED = os.environ.get("RUNNER_VERSIONS_PUBLISHED")
+    FEATURES = os.environ.get("FEATURES")
 
     # read the runner compiler history
     runner_versions_pd = pd.read_csv(os.path.join(ROOT, RUNNER_VERSIONS))
