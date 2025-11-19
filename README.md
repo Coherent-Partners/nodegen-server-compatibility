@@ -7,7 +7,7 @@ The Spark team developed [`nodegen-server`](https://github.com/orgs/Coherent-Par
 
 This page details the compatibility between a version of the [`nodegen-server`](https://github.com/orgs/Coherent-Partners/packages/container/package/nodegen-server) against the Spark [Neuron compiler](https://docs.coherent.global/build-spark-services/neuron/release-history). The compiler version can be found from the Spark UI under the _[Service Documentation Version details](https://docs.coherent.global/navigation/service-documentation#version-details)_ or in the [_Execute API_ `response_meta`](https://docs.coherent.global/spark-apis/execute-api/execute-api-v3#response_meta).
 
-[`nodegen-server`](https://github.com/orgs/Coherent-Partners/packages/container/package/nodegen-server) `1.31.0` is the first version that includes the capability and configuration for processing compatibility versions and the version compatibility mapping. Compiled  [Wasm](https://webassembly.org/) modules from `Neuron` `1.22.1` onwards embed the Neuron version that is also needed for the compatibility check.
+[`nodegen-server`](https://github.com/orgs/Coherent-Partners/packages/container/package/nodegen-server) `>=1.31.0` includes the capability and configuration for processing compatibility versions and the version compatibility mapping. Compiled [Wasm](https://webassembly.org/) modules from `Neuron` `>=1.22.1` embed the Neuron version that is also needed for the compatibility check.
 
 The releases include the download for a JSON file mapping the compatibility versions.
 
@@ -18,6 +18,7 @@ The releases include the download for a JSON file mapping the compatibility vers
 List of all released runner versions and their corresponding __highest__ supported Neuron version.
 |date|runner_version|safe_compiler|
 | :---: | :---: | :---: |
+|2025-11-19|1.50.2|1.24.1|
 |2025-11-14|1.50.0|1.24.1|
 |2025-09-30|1.49.0|1.23.2|
 |2025-08-22|1.47.2|1.23.1|
