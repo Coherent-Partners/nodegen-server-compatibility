@@ -18,7 +18,7 @@ The releases include the download for a JSON file mapping the compatibility vers
 List of all released runner versions and their corresponding __highest__ supported Neuron version.
 |date|runner_version|safe_compiler|
 | :---: | :---: | :---: |
-|2025-11-27|1.50.4|1.24.1|
+|2025-12-02|1.50.4|1.25.0|
 |2025-11-19|1.50.2|1.24.1|
 |2025-11-14|1.50.0|1.24.1|
 |2025-09-30|1.49.0|1.23.2|
